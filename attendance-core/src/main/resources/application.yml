@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/attendance_db
+    username: attendance_user
+    password: attendance_pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: attendance
+
+  application:
+    name: attendance-core
